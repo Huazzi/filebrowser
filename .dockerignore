@@ -1,5 +1,85 @@
-*
-!docker/*
-!healthcheck.sh
-!docker_config.json
+# 忽略所有隐藏文件和目录（除了特定的配置文件）
+.*
+!/.dockerignore
+!/.gitignore
+
+# 忽略前端开发文件和缓存
+frontend/node_modules/
+frontend/.pnpm-store/
+frontend/.vite/
+frontend/tsconfig.*
+frontend/vite.config.ts
+frontend/commitlint.config.js
+frontend/eslint.config.js
+frontend/playwright.config.ts
+frontend/postcss.config.cjs
+frontend/package*.json
+frontend/pnpm-lock.yaml
+frontend/index.html
+frontend/src/
+frontend/tests/
+frontend/tests-examples/
+
+# 忽略Go开发文件和测试文件
+**/*_test.go
+**/testdata/
+**/.idea/
+**/.vscode/
+go.sum
+go.mod
+tools/
+
+# 忽略版本控制和IDE文件
+.git/
+*.swp
+*.swo
+*.DS_Store
+
+# 忽略本地构建产物和临时文件
+*.log
+config/database.db
+config/settings.json
+
+# 忽略文档和示例文件
+CHANGELOG.md
+README.md
+SECURITY.md
+LICENSE
+Makefile
+common.mk
+tools.mk
+commitlint.config.js
+scripts/
+ourSpace/
+
+# 忽略不必要的系统文件
+**/Thumbs.db
+**/.directory
+
+# 保留以下必要的文件和目录
 !filebrowser
+!filebrowser.db
+!docker_config.json
+!frontend/dist/
+!frontend/public/
+!docker/
+!auth/
+!cmd/
+!config/
+!diskcache/
+!errors/
+!files/
+!fileutils/
+!http/
+!img/
+!rules/
+!runner/
+!search/
+!settings/
+!share/
+!storage/
+!users/
+!version/
+!main.go
+!Dockerfile*
+!healthcheck.sh
