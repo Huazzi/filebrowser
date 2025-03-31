@@ -20,7 +20,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import duration from "dayjs/plugin/duration";
 
 import "./css/styles.css";
-import "./assets/styles/custom.css";  // 导入自定义样式
+import "./css/custom.css";  // 导入自定义样式
 
 // register dayjs plugins globally
 dayjs.extend(localizedFormat);
