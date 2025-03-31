@@ -4,8 +4,8 @@
   src: url('@/assets/fonts/custom/上图东观体-常规.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
   /* 确保字体加载时的平滑过渡 */
+  font-display: swap;
 }
 
 :root {

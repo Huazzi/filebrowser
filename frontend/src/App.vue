@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <router-view></router-view>
+  <div class="app-container">
+    <router-view />
+    <!-- 备案号信息 -->
+    <ICPFooter />
   </div>
 </template>
 
@@ -9,6 +11,7 @@ import { ref, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { setHtmlLocale } from "./i18n";
 import { getMediaPreference, getTheme, setTheme } from "./utils/theme";
+import ICPFooter from "@/components/copyright-icp.vue";
 
 const { locale } = useI18n();
 
@@ -31,3 +34,15 @@ watch(locale, (newValue) => {
   newValue && setHtmlLocale(newValue);
 });
 </script>
+
+<style scoped>
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+</style>
