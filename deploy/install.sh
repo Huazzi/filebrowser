@@ -2,7 +2,7 @@
 set -e
 
 # 创建目录结构
-sudo mkdir -p /opt/filebrowser/{bin,config,data,logs}
+sudo mkdir -p /opt/filebrowser/{bin,config,data,logs,srv}
 
 # 复制文件
 sudo cp bin/filebrowser /opt/filebrowser/bin/
@@ -24,8 +24,8 @@ After=network.target
 [Service]
 User=filebrowser
 Group=filebrowser
-ExecStart=/opt/filebrowser/bin/filebrowser -c /opt/filebrowser/config/config.json
-Restart=always
+ExecStart=/opt/filebrowser/bin/filebrowser -c /opt/filebrowser/config/config.json --debug
+RestartSec=5s  # 失败后等待5秒再重启
 
 [Install]
 WantedBy=multi-user.target
