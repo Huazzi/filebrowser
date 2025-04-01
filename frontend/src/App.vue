@@ -1,8 +1,7 @@
 <template>
   <div class="app-container">
     <router-view />
-    <!-- 备案号信息 -->
-    <ICPFooter />
+    <ICPFooter /><!-- 备案号信息 -->
   </div>
 </template>
 
@@ -40,9 +39,5 @@ watch(locale, (newValue) => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.main-content {
-  flex: 1;
 }
 </style>

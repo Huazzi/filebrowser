@@ -1,7 +1,12 @@
 <template>
   <footer class="icp-container">
     <div class="icp-wrapper">
-      <span class="icp-copyright">© {{ year }} {{ author }}</span>
+      <span class="icp-copyright">
+        <i class="iconfont icon-bx-copyright"></i>
+        {{ year }} {{ author1 }}
+        <i class="iconfont icon-aixin2"></i>
+        {{ author2 }}
+      </span>
       <a
         class="icp-link"
         href="http://beian.miit.gov.cn/"
@@ -17,11 +22,14 @@
 
 <script setup>
 const year = new Date().getFullYear();
-const author = "huazzi";
+const author1 = "Huazzi";
+const author2 = "JiaMei";
 const record = "黔ICP备2025xxxxxx号";
 </script>
 
 <style scoped>
+@import url("https://at.alicdn.com/t/c/font_4877925_1udf012klyx.css");
+
 /* 自定义字体声明 */
 @font-face {
   font-family: "ShangTuDongGuan";
