@@ -23,8 +23,8 @@
 <script setup>
 const year = new Date().getFullYear();
 const author1 = "Huazzi";
-const author2 = "JiaMei";
-const record = "黔ICP备2025xxxxxx号";
+const author2 = "May";
+const record = "黔ICP备2025047885号";
 </script>
 
 <style scoped>
