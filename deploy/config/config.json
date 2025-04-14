@@ -3,5 +3,6 @@
   "address": "0.0.0.0",
   "database": "/opt/filebrowser/data/filebrowser.db",
   "log": "/opt/filebrowser/logs/filebrowser.log",
-  "root": "/srv"
+  "scope": "/opt/filebrowser/srv/",
+  "locale": "zh-cn"
 }

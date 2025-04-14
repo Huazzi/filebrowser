@@ -3,7 +3,8 @@
     <div class="icp-wrapper">
       <span class="icp-copyright">
         <i class="iconfont icon-bx-copyright"></i>
-        {{ year }} {{ author1 }}
+        {{ year }}
+        <a class="icp-link" href="https://blog.huazzi.site/">{{ author1 }}</a>
         <i class="iconfont icon-aixin2"></i>
         {{ author2 }}
       </span>
@@ -92,7 +93,7 @@ const record = "黔ICP备2025047885号";
 }
 
 .icp-link:hover {
-  color: #7eb6f0;
+  color: #1277e4;
 }
 
 .icp-icon {
