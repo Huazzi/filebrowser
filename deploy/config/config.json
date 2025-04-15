@@ -1,6 +1,6 @@
 {
   "port": 8080,
-  "address": "0.0.0.0",
+  "address": "127.0.0.1",
   "database": "/opt/filebrowser/data/filebrowser.db",
   "log": "/opt/filebrowser/logs/filebrowser.log",
   "scope": "/opt/filebrowser/srv/",
